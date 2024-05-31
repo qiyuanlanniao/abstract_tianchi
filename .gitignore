@@ -1,3 +1,4 @@
 data/
 test*
 model_weights/
+__pycache__/

@@ -11,8 +11,10 @@
 |---abstract_tianchi
     |--- figs                                           # 项目中用到的图片
     |--- data_analysis.ipynb                            # 数据集分析
-    |--- data_process.py                                # 数据集处理
+    |--- data_process                                   # 各种数据处理文件夹
+        |--- process_v1.py                              # 输入为events文本，输出为target文本
     |--- evaluate.py                                    # 模型评估
+
     |--- predict.py                                     # 输出预测文件，提交成绩
 ```
 
@@ -92,9 +94,6 @@ events文本的高频词
 | doc文本 | 228          | 1161         | 586       |
 | events文本 | 0            | 586          | 99.22     |
 | summarization文本 | 5            | 218          | 34.33     |
-
-
-
 
 
 # 二、finetune阶段
