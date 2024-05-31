@@ -6,15 +6,16 @@
 任务类型，给定source_text输出target_text，摘要任务，初步考虑transformer结构
 
 # 文件说明
-
 ```
 |---abstract_tianchi
     |--- figs                                           # 项目中用到的图片
     |--- data_analysis.ipynb                            # 数据集分析
     |--- data_process                                   # 各种数据处理文件夹
         |--- process_v1.py                              # 输入为events文本，输出为target文本
+    |--- SimSun.ttf                                     # 中文ttf
+    |--- utils.py                                       # 工具包
+    |--- finetune.py                                    # 模型训练代码
     |--- evaluate.py                                    # 模型评估
-
     |--- predict.py                                     # 输出预测文件，提交成绩
 ```
 
