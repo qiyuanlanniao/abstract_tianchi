@@ -13,10 +13,37 @@
     |--- data_analysis.ipynb                            # 数据集分析
     |--- data_process.py                                # 数据集处理
     |--- evaluate.py                                    # 模型评估
+    |--- predict.py                                     # 输出预测文件，提交成绩
 ```
 
 
 # 一、数据分析
+
+## 0. 数据量
+
+训练集合和预测集合
+
+![训练集和预测集](figs/datanum.png)
+
+
+## 1. summarization文本分析
+
+summarization即为模型的输出
+
+![长度分布](figs/summarizaion_length.png)
+
+文本最短长度 5 文本最大长度 218
+
+平均长度为34.33，在transformer生成预测文本的时候长度可以设置为200
+
+输出文本的高频词
+
+![top words](figs/summarization_top.png)
+
+词云图
+
+![词云图](figs/summarization_wordcloud.png)
+
 
 # 二、finetune阶段
 
@@ -35,6 +62,9 @@
 # 模型原理
 
 # 成绩记录
+
+# 分工记录
+
 
 
 # 参考文献
