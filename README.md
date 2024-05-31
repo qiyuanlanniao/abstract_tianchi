@@ -141,6 +141,13 @@ B ：
 # 训练环境
 两张 RTX 3090 显卡
 
+```
+#python 3.8
+pytorch
+transformers
+```
+
+
 # 参考文献
 - [1] BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension
 - [2] NEZHA: Neural Contextualized Representation for Chinese Language Understanding
