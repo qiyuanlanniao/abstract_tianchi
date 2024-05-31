@@ -44,6 +44,27 @@ summarization即为模型的输出
 
 ![词云图](figs/summarization_wordcloud.png)
 
+## 2. envets文本分析
+
+events要作为模型的输入
+
+![长度分布](figs/event_length.png)
+
+文本最短长度 0 文本最大长度 586
+
+平均长度99.22
+
+**模型输入可以设置为512**
+
+events文本的高频词
+
+![top words](figs/events_top.png)
+
+词云图
+
+![词云图](figs/events_wordcloud.png)
+
+
 
 # 二、finetune阶段
 
@@ -78,7 +99,7 @@ B ：
 
 |时间|记录|
 |-----|----------|
-|     |          |
+|0528|evetns文本分析|
 |     |          |
 |     |          |
 |     |          |
