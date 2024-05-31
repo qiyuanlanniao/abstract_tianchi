@@ -13,6 +13,15 @@
     |--- data_process.py                                # 
 ```
 
+## finetune阶段
+
+### 1. 只对events考虑做summarize
+两个模型：BART、Nezha
+
+1. BART中文与训练下载源：https://huggingface.co/fnlp/bart-base-chinese/tree/main
+   
+
+
 # 数据分析
 
 # 模型原理
@@ -21,4 +30,5 @@
 
 
 # 参考
-[1] 
+- [1] BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension
+
