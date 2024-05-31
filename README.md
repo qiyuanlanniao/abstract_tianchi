@@ -13,8 +13,10 @@
     |--- data_analysis.ipynb                            # 数据集分析
     |--- data_process                                   # 各种数据处理文件夹
         |--- process_v1.py                              # 输入为events文本，输出为target文本
+    |--- SimSun.ttf                                     # 中文ttf
+    |--- utils.py                                       # 工具包
+    |--- finetune.py                                    # 模型训练代码
     |--- evaluate.py                                    # 模型评估
-
     |--- predict.py                                     # 输出预测文件，提交成绩
 ```
 
@@ -136,8 +138,8 @@ B ：
 |     |          |
 
 
-
-
+# 训练环境
+两张 RTX 3090 显卡
 
 # 参考文献
 - [1] BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension
