@@ -20,6 +20,8 @@
 
 # 二、finetune阶段
 
+![只考虑对events文本转写](figs/events.png)
+
 ## 1. 只对events考虑做summarize
 两个模型：BART、Nezha
 
