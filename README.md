@@ -124,7 +124,7 @@ A ：
 |0531|数据集Summarization+doc文本分析|
 |0531|数据文本整理`process_v1.py`，和Bart模型搭建`train.py` |
 |0601|添加评测代码|
-|     |          |
+|0601|优化了predict.py代码，从原来的1h推理时延降低到10min|
 |     |          |
 
 B ： 
