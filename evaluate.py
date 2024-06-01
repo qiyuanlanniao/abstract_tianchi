@@ -110,12 +110,12 @@ if __name__ == '__main__':
     assert len(os.listdir(args.checkpoint_dir)) >= args.epoch+2 , f'number of data file less than {args.epoch}+2'
      # 加载模型
     if  'bart' in args.checkpoint_dir:
-        print(f'评估bart模型: {args.checkpoint_dir}')
+        print(f'评估bart模型: {args.checkpoint_dir} epoch {args.epoch} ')
         TOKENIZER = AutoTokenizer.from_pretrained('model_weights/bart_base_chinese/')
         model = BartForConditionalGeneration.from_pretrained('model_weights/bart_base_chinese/')
         MAX_LENGTH = 512
     else:
-        print(f'评估Pegasus模型')
+        print(f'评估Pegasus模型 : {args.checkpoint_dir} epoch {args.epoch} ')
         TOKENIZER = BertTokenizer.from_pretrained("model_weights/pegasus_base_chinese/")
         model = PegasusForConditionalGeneration.from_pretrained('model_weights/pegasus_base_chinese/')
         MAX_LENGTH = 512
