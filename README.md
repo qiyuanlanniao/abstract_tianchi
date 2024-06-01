@@ -119,8 +119,9 @@ events文本的高频词
 A ： 
 |提交时间|线上成绩|提交权重|训练方法|
 |-----|----------|----------|----------|
-|0601|73.9568|bart_datav1/model.pth|bart+process_v1.py|
-|   |   |   |   |
+|0601|73.9568|bart_datav1/model_ep4.pth|bart+process_v1.py|
+|0601|74.5067|bart_datav1/model_ep8.pth|bart+process_v1.py|
+
 
 
 
@@ -134,7 +135,7 @@ A ：
 |0531|数据文本整理`process_v1.py`，和Bart模型搭建`train.py` |
 |0601|添加评测代码|
 |0601|优化了predict.py代码，从原来的1h推理时延降低到10min|
-|     |          |
+|0601|提交了两版成绩，暂时排名第八|
 
 B ： 
 

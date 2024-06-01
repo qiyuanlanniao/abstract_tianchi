@@ -25,7 +25,7 @@ TOKENIZER =None
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # 设置参数
 
-BATCH_SIZE=4
+BATCH_SIZE=32
 
 def collate_fn(batchs):
     source = [batch[0] for batch in batchs]
@@ -139,14 +139,14 @@ if __name__ == '__main__':
     bleus = []
     ciders = []
     rouges = []
-    for i in range(args.epoch):
-        bleu,cider,rouge =evaluate(deepcopy(model),testloader,i,args.checkpoint_dir)
-        print(f'bleu {bleu} cider {cider} rouge {rouge}')
-        bleus.append(bleu)
-        ciders.append(cider)
 
-        rouges.append(rouge)
-    with open(os.path.join(args.checkpoint_dir,'eval.json'),'w') as file:
+    bleu,cider,rouge =evaluate(deepcopy(model),testloader,args.epoch,args.checkpoint_dir)
+    print(f'bleu {bleu} cider {cider} rouge {rouge}')
+    bleus.append(bleu)
+    ciders.append(cider)
+    rouges.append(rouge)
+
+    with open(os.path.join(args.checkpoint_dir,f'eval_ep{args.epoch}.json'),'w') as file:
         json.dump({
             'bleu':bleus,'cider':ciders,'rouges':rouges,
         },file,indent=4,ensure_ascii=False)
