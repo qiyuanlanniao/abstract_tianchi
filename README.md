@@ -102,11 +102,11 @@ events文本的高频词
 ![只考虑对events文本转写](figs/events.png)
 
 ## 1. 只对events考虑做summarize
-两个模型：BART、Nezha
+两个模型：BART、Pegasus
 
 1. BART中文预选训练下载源：https://huggingface.co/fnlp/bart-base-chinese/tree/main
 
-2. Nezha中文与训练下载源：https://github.com/lonePatient/NeZha_Chinese_PyTorch?tab=readme-ov-file
+2. Pegasus中文与训练下载源：https://huggingface.co/uer/pegasus-base-chinese-cluecorpussmall
    
 ## 2. 考虑对doc长文本做特征提取然后一起喂入Transformer-encoder
 
@@ -133,12 +133,12 @@ B ：
 |-----|----------|
 |0528|evetns文本分析|
 |0531|训练和验证集固定划分，避免交叉          |
-|     |          |
+|0601|Pegasus+process_v1|
 |     |          |
 |     |          |
 
 
 # 参考文献
 - [1] BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension
-- [2] NEZHA: Neural Contextualized Representation for Chinese Language Understanding
+- [2] PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization
 
