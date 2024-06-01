@@ -84,7 +84,7 @@ if __name__ == '__main__':
     model = PegasusForConditionalGeneration.from_pretrained('model_weights/pegasus_base_chinese')
     model.to(DEVICE)
     print('加载模型成功')
-    
+
     total_steps = int(len(trainloader) * EPOCH)
     optimizer, lr_scheduler = build_optimizer(model,
         lr=LEARNING_RATE,
@@ -143,9 +143,4 @@ if __name__ == '__main__':
             'train_loss':train_loss_list,
             'test_loss':test_loss_list,
         },file,indent=4,ensure_ascii=False)
-    # 这个记录同步到github上
-    with open(os.path.join('json_results/',f'{EXP_NAME}_record.json'),'w') as file:
-        json.dump({
-            'train_loss':train_loss_list,
-            'test_loss':test_loss_list,
-        },file,indent=4,ensure_ascii=False)
+    
