@@ -122,7 +122,10 @@ A ：
 |0601|73.9568|bart_datav1/model_ep4.pth|bart+process_v1.py|
 |0601|74.5067|bart_datav1/model_ep8.pth|bart+process_v1.py|
 
-
+B ： 
+|提交时间|线上成绩|提交权重|训练方法|
+|-----|----------|----------|----------|
+|0601|46.5899|pegasus/model_ep8.pth|pegasus+process_v1.py|
 
 
 # 分工记录
@@ -146,7 +149,7 @@ B ：
 |0531|训练和验证集固定划分，避免交叉          |
 |0601|Pegasus+process_v1|
 |0601|预测代码|
-|     |          |
+|0601|提交了pegasus模型，成绩只有46.5899|
 
 
 # 参考文献
