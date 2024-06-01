@@ -80,10 +80,11 @@ if __name__ == '__main__':
         collate_fn=collate_fn,)
     print(f'训练集 {len(train)} , 测试集 {len(test)}')
     # 加载模型
-    TOKENIZER = BertTokenizer.from_pretrained('model_weights/bart_base_chinese/')
-    model = PegasusForConditionalGeneration.from_pretrained('model_weights/bart_base_chinese/')
+    TOKENIZER = BertTokenizer.from_pretrained('model_weights/pegasus_base_chinese')
+    model = PegasusForConditionalGeneration.from_pretrained('model_weights/pegasus_base_chinese')
     model.to(DEVICE)
     print('加载模型成功')
+    
     total_steps = int(len(trainloader) * EPOCH)
     optimizer, lr_scheduler = build_optimizer(model,
         lr=LEARNING_RATE,
