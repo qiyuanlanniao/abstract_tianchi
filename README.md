@@ -110,8 +110,9 @@ events文本的高频词
    
 ## 2. 考虑对doc长文本做特征提取然后一起喂入Transformer-encoder
 
+# 三、Pretrain阶段
+> 引入pretrain任务
 
-# 模型原理
 
 # 成绩记录
 
@@ -135,9 +136,6 @@ B ：
 |     |          |
 |     |          |
 |     |          |
-
-
-
 
 
 # 参考文献
