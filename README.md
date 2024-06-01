@@ -151,6 +151,8 @@ B ：
 |0601|预测代码|
 |0601|提交了pegasus模型，成绩只有46.5899|
 
+# 实验平台
+腾讯云2080ti，12G
 
 # 参考文献
 - [1] BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension
