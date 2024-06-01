@@ -82,7 +82,7 @@ if __name__ == '__main__':
             for event_id , sent in zip(event_ids,sents):
                 item_json.append({
                     'id':event_id,
-                    'event-summarization':sent
+                    'event-summarization':''.join(sent.split(' '))
                 })
 
             # for event in events:
