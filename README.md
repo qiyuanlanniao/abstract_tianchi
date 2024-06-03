@@ -143,6 +143,7 @@ A ：
 |0601|优化了predict.py代码，从原来的1h推理时延降低到10min|
 |0601|提交了两版成绩，暂时排名第八|
 |0602|调研了transformer的pretrain方法，计划尝试做一下pretrain|
+|0603|进行模型pretrain|
 
 B ： 
 
