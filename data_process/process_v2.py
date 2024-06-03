@@ -15,7 +15,7 @@ if __name__ == '__main__':
     train_df = []
     for item in data:
         events = item['events']
-        for idx , (event,summarization) in enumerate(zip(events)):
+        for idx , event in enumerate(events):
             train_df.append({
                 'source':event['content'],
                 'target':event['content'],})
