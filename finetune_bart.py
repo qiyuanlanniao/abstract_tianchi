@@ -20,7 +20,7 @@ DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # 设置参数
 MAX_LENGTH=512
 BATCH_SIZE=16
-EPOCH = 10
+EPOCH = 12
 LEARNING_RATE=4e-5
 WEIGHT_DECAY=1e-2
 
@@ -56,7 +56,8 @@ class MyDataset(Dataset):
         return  source_text , target_text
 
 if __name__ == '__main__':
-    EXP_NAME = 'bart_datav1'
+    EXP_NAME = 'bart_pretrain_datav1'
+    pretrain_state_dict_path = 'model_weights/pretrain_bart/model_ep16.pth'
     OUT_PATH = os.path.join('model_weights/',EXP_NAME)
     print(f'保存结果至 {OUT_PATH}')
     os.makedirs(OUT_PATH,exist_ok=True)
@@ -82,7 +83,16 @@ if __name__ == '__main__':
     # 加载模型
     model = BartForConditionalGeneration.from_pretrained('model_weights/bart_base_chinese/')
     TOKENIZER = AutoTokenizer.from_pretrained('model_weights/bart_base_chinese/')
+    if os.path.exists(pretrain_state_dict_path):
+        print(f'加载预训练权重 {pretrain_state_dict_path}')
+
+        state_dict = torch.load(pretrain_state_dict_path,map_location='cpu')
+        model.load_state_dict(state_dict)
+
+
     model.to(DEVICE)
+
+
     print('加载模型成功')
     total_steps = int(len(trainloader) * EPOCH)
     optimizer, lr_scheduler = build_optimizer(model,

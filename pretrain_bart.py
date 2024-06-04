@@ -4,7 +4,7 @@ import os
 import random
 import torch
 import torch.nn as nn
-from transformers import AutoTokenizer,BartForConditionalGeneration,AutoConfig
+from transformers import AutoTokenizer,BartForConditionalGeneration
 from torch.utils.data import Dataset,DataLoader
 
 from tqdm import tqdm
@@ -20,8 +20,8 @@ DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # 设置参数
 MAX_LENGTH=512
 BATCH_SIZE=16
-EPOCH = 10
-LEARNING_RATE=4e-5
+EPOCH = 32
+LEARNING_RATE=1e-4
 WEIGHT_DECAY=1e-2
 
 def collate_fn(batchs):
