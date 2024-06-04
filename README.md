@@ -132,6 +132,7 @@ A ：
 |0601|74.5067|bart_datav1/model_ep8.pth|bart+process_v1.py|
 |0602|74.4410|bart_datav1/model_ep9.pth|微调了一些参数，bart+process_v1.py|
 |0602|74.6428|bart_datav1/model_ep9.pth|微调了一些参数，bart+process_v1.py|
+|0604|74.6428|bart_datav2/model_ep9.pth|微调了一些参数，bart+process_v1.py|
 
 B ： 
 |提交时间|线上成绩|提交权重|训练方法|
@@ -152,7 +153,8 @@ A ：
 |0601|优化了predict.py代码，从原来的1h推理时延降低到10min|
 |0601|提交了两版成绩，暂时排名第八|
 |0602|调研了transformer的pretrain方法，计划尝试做一下pretrain|
-|0603|进行模型pretrain|
+|0603|改进了pretrian的数据集|
+|0604|添加了模型pretrain的代码|
 
 B ： 
 
@@ -166,6 +168,7 @@ B ：
 |0601|提交了pegasus模型，成绩只有46.5899|
 |0602|提交了pegasus模型，调了一下参数，成绩只有56.9|
 |0603|处理预训练文本，为了避免数据交叉，选择doc和content作为预训练文本|
+|0604|配置环境汇总成requirement|
 
 # 实验平台
 腾讯云2080ti，12G
