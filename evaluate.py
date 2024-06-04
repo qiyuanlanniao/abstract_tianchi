@@ -7,8 +7,6 @@ from transformers import AutoTokenizer,BartForConditionalGeneration
 from transformers import BertTokenizer,PegasusForConditionalGeneration
 from torch.utils.data import Dataset,DataLoader
 import pandas as pd
-from rouge_score import rouge_scorer
-
 
 from tqdm import tqdm
 import json

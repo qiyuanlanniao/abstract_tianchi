@@ -1,0 +1,9 @@
+torch
+transformers
+matplotlib
+pandas
+numpy
+jieba
+wordcloud
+pycocoevalcap
+tqdm

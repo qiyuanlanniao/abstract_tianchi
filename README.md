@@ -17,7 +17,16 @@
     |--- finetune.py                                    # 模型训练代码
     |--- evaluate.py                                    # 模型评估
     |--- predict.py                                     # 输出预测文件，提交成绩
+    |--- requirements.txt                               # 项目需要的python三方库
 ```
+
+# 0. 项目环境配置
+
+首先确保python环境在3.8以上，python环境下载请到[官网](https://www.python.org)。
+
+下载好python之后，直接cd到这个项目文件夹下，然后输入`pip install -r requriements.txt -i  https://pypi.tuna.tsinghua.edu.cn/simple`
+
+下载完成之后则环境配置成功。
 
 
 # 一、数据分析
