@@ -2,4 +2,3 @@ data/
 test*
 model_weights/
 __pycache__/
-报告.*
