@@ -57,7 +57,7 @@ class MyDataset(Dataset):
 
 if __name__ == '__main__':
     EXP_NAME = 'bart_pretrain_datav1'
-    pretrain_state_dict_path = 'model_weights/pretrain_bart/model_ep16.pth'
+    pretrain_state_dict_path = 'model_weights/pretrain_bart/model_ep3.pth'
     OUT_PATH = os.path.join('model_weights/',EXP_NAME)
     print(f'保存结果至 {OUT_PATH}')
     os.makedirs(OUT_PATH,exist_ok=True)
