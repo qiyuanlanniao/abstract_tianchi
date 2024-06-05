@@ -28,6 +28,24 @@
 
 下载完成之后则环境配置成功。
 
+配置成功之后按照下面的流程执行
+
+
+- a. 数据集下载到目录里
+- b. 创建一个model_weights目录里，把bart和pegasus的预训练权重下载到model_weights目录里，两个预训练权重后面有附带链接
+- c. 先运行split.py划分训练集合和验证集合，避免数据交叉，
+- d. 运行dataprocess/process_v1.py或者_v2.py处理数据格式。
+- e. 运行finetune_bart.py或者finetune_pegasus.py，
+
+目前暂时选择了bart进行了预训练，加入预训练之后的流程如下：
+
+- a. 数据集下载到目录里
+- b. 创建一个model_weights目录里，把bart预训练权重下载到model_weights目录
+- c. 先运行split.py划分训练集合和验证集合，避免数据交叉，
+- d. 运行dataprocess/process_v2.py得到预训练数据集格式
+- e. 运行dataprocess/process_v1.py得到微调任务数据格式
+- f. 运行pretrain_bart.py得到bart预训练权重
+- g. 修改finetune_bart.py里面的权重加载，然后运行finetune_bart.py
 
 # 一、数据分析
 
