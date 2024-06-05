@@ -133,6 +133,8 @@ A ：
 |0602|74.4410|bart_datav1/model_ep9.pth|微调了一些参数，bart+process_v1.py|
 |0602|74.6428|bart_datav1/model_ep9.pth|微调了一些参数，bart+process_v1.py|
 |0604|74.6428|bart_datav2/model_ep9.pth|微调了一些参数，bart+process_v1.py|
+|0605|70.2784|bart_pretrain_datav1/model_ep9.pth|添加了预训练|
+|0605|69.9692|bart_pretrain_datav1/model.pth|添加了预训练|
 
 B ： 
 |提交时间|线上成绩|提交权重|训练方法|
