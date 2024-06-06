@@ -12,12 +12,17 @@
     |--- data_analysis.ipynb                            # 数据集分析
     |--- data_process                                   # 各种数据处理文件夹
         |--- process_v1.py                              # 输入为events文本，输出为target文本
+        |--- process_v2.py                              # 预训练数据文本
     |--- SimSun.ttf                                     # 中文ttf
     |--- utils.py                                       # 工具包
     |--- finetune.py                                    # 模型训练代码
     |--- evaluate.py                                    # 模型评估
     |--- predict.py                                     # 输出预测文件，提交成绩
     |--- requirements.txt                               # 项目需要的python三方库
+    |--- finetune_bart.py                               # 微调bart模型
+    |--- finetune_pegasus.py                            # 微调pegasus模型
+    |--- pretrain_bart.py                               # 预训练bart模型
+    
 ```
 
 # 0. 项目环境配置
@@ -46,6 +51,13 @@
 - e. 运行dataprocess/process_v1.py得到微调任务数据格式
 - f. 运行pretrain_bart.py得到bart预训练权重
 - g. 修改finetune_bart.py里面的权重加载，然后运行finetune_bart.py
+
+输出txt提交文件
+
+看predict.py，比如finetune_bart之后得到的结果文件夹在`model_weights/bart_datav1`
+
+这时候就可以`python predict.py -cd model_weights/bart_datav1`，就在这个`model_weights/bart_datav1`下得到一个`submit.txt`文件。
+
 
 # 一、数据分析
 
